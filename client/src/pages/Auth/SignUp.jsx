@@ -32,8 +32,8 @@ const SignUp = () => {
   return (
     <AuthLayout>
       <div className="lg:w-[100%] h-auto md:h-full mt-10 md:mt-0 flex flex-col justify-center">
-        <h3 className="text-xl font-semibold text-black">Create an Account</h3>
-        <p className="text-xs text-slate-700 mt-[5px] mb-4">
+        <h3 className="text-3xl font-semibold text-black">Create an Account</h3>
+        <p className="text-xl text-slate-700 mt-[5px] mb-4">
           Join us today by entering your details below.
         </p>
         <form onSubmit={handleSignUp} className="flex flex-col gap-3">
