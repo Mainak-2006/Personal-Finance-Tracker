@@ -33,7 +33,7 @@ const SignUp = () => {
     <AuthLayout>
       <div className="lg:w-[100%] h-auto md:h-full mt-10 md:mt-0 flex flex-col justify-center">
         <h3 className="text-3xl font-semibold text-black">Create an Account</h3>
-        <p className="text-xl text-slate-700 mt-[5px] mb-4">
+        <p className="text-xl text-slate-900 mt-[5px] mb-4">
           Join us today by entering your details below.
         </p>
         <form onSubmit={handleSignUp} className="flex flex-col gap-3">
@@ -72,11 +72,11 @@ const SignUp = () => {
           )}
           <button
             type="submit"
-            className="w-full bg-purple-600 text-white py-2 px-4 rounded-lg hover:bg-purple-700 transition-colors duration-200 cursor-pointer font-medium text-sm"
+            className="w-full bg-purple-500 text-white py-2 px-4 rounded-lg hover:bg-purple-700 transition-colors duration-200 cursor-pointer font-medium text-sm"
           >
             SIGN UP
           </button>
-          <p className="text-lg text-slate-700 font-semibold mt-2">
+          <p className="text-lg text-slate-900 font-semibold mt-2">
             Already have an account? <Link to="/login" className="text-purple-600 hover:text-purple-700 underline">Login</Link>
           </p>
         </form>

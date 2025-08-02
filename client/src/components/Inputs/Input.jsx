@@ -17,7 +17,7 @@ const Input = ({
 
   return (
     <div className="mb-3">
-      <label className="block text-sm font-medium text-gray-700 mb-1">
+      <label className="block text-sm font-medium text-gray-900 mb-1">
         {label}
         {required && <span className="text-red-500">*</span>}
       </label>
@@ -28,7 +28,7 @@ const Input = ({
           onChange={onChange}
           placeholder={placeholder}
           required={required}
-          className={`w-full px-3 py-1.5 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent text-sm ${
+          className={`w-full px-3 py-1.5 border border-gray-900 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-700 focus:border-transparent text-sm ${
             error ? 'border-red-500' : 'border-gray-300'
           } ${isPasswordField ? 'pr-10' : ''}`}
         />
@@ -39,9 +39,9 @@ const Input = ({
             className="absolute right-3 top-1/2 transform -translate-y-1/2 cursor-pointer text-gray-500 hover:text-gray-700 focus:outline-none"
           >
             {showPassword ? (
-              <Eye size={18} />
+              <Eye size={18} color='black'/>
             ) : (
-              <EyeOff size={18} />
+              <EyeOff size={18} color='black'/>
             )}
           </button>
         )}

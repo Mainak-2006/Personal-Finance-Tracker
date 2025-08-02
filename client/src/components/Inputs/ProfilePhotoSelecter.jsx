@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react'
-import { Camera, X } from 'lucide-react'
+import { Camera, X ,Trash2} from 'lucide-react'
 
 const ProfilePhotoSelector = ({ 
   label = "Profile Picture", 
@@ -43,7 +43,7 @@ const ProfilePhotoSelector = ({
 
   return (
     <div className="mb-3">
-      <label className="block text-sm font-medium text-gray-700 mb-1">
+      <label className="block text-sm font-medium text-gray-900 mb-1">
         {label}
         {required && <span className="text-red-500">*</span>}
       </label>
@@ -68,9 +68,9 @@ const ProfilePhotoSelector = ({
             <button
               type="button"
               onClick={handleRemovePhoto}
-              className="absolute -top-1 -right-1 bg-red-500 text-white rounded-full p-0.5 hover:bg-red-600 transition-colors"
+              className="absolute -top-1 -right-1 cursor-pointer bg-red-500 text-white rounded-full p-0.5 hover:bg-red-600 transition-colors"
             >
-              <X size={10} />
+              <Trash2 size={14} />
             </button>
           )}
         </div>
@@ -92,7 +92,7 @@ const ProfilePhotoSelector = ({
             <Camera size={14} className="mr-1.5" />
             {preview ? 'Change Photo' : 'Upload Photo'}
           </label>
-          <p className="text-xs text-gray-500 mt-1">
+          <p className="text-xs text-gray-900 mt-1">
             JPG, PNG or GIF (max. 5MB)
           </p>
         </div>
